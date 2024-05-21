@@ -2,12 +2,12 @@
 <manifest>
 
   <remote  name="fde"
-	  fetch="https://gitee.com/openfde/" />
+	  fetch="https://github.com/openfde/" />
   <remote  name="private"
 	  fetch="ssh://git@github.com/openfde" />
 
   <default revision="refs/heads/master"
-           remote="fde"
+           remote="private"
            sync-c="true"
            sync-j="4" />
 
