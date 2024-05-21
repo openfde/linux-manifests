@@ -2,14 +2,9 @@
 <manifest>
 
   <remote  name="fde"
-	  fetch="https://github.com/openfde/"
-	  revision="refs/heads/fde_w" />
-  <remote  name="plaza"
-	  fetch="https://www.xplaza.cn/OpenFDE/"
-	  revision="refs/heads/fde_w" />
-
+	  fetch="https://gitee.com/openfde/" />
   <remote  name="private"
-           fetch="ssh://git@github.com" />
+	  fetch="ssh://git@github.com/openfde" />
 
   <default revision="refs/heads/master"
            remote="fde"
@@ -19,13 +14,13 @@
   <!-- AOSP Projects -->
 
   <project path="fde_ctrl" name="fde_ctrl" groups="go" revision="main" />
-  <project path="fde_fs" name="fde_fs" groups="go" revision="main" />
+  <project path="fde_fs" name="fde_fs" groups="go"  />
   <project path="fdeion" name="fdeion" groups="kmod" /> 
   <project path="libglibutil" name="libglibutil" groups="waydroid" /> 
   <project path="liblibgbinder" name="libgbinder" groups="waydroid" /> 
   <project path="gbinder-python" name="gbinder-python" groups="waydroid" /> 
-  <project path="waydroid_waydroid" name="waydroid_waydroid" groups="waydroid" /> 
-  <project path="mesa" name="mesa" groups="3d" revision="20.1.0_fde_w_for_kylinv10"/> 
+  <project path="waydroid_waydroid" name="waydroid_waydroid" groups="waydroid" revision="fde_w" /> 
+  <project path="mesa" name="mesa" groups="3d" revision="20.1.0_fde_w_for_kylinv10" clone-depth="1"/> 
   <project path="fde_tigervncserver" name="fde_tigervncserver" groups="fusion" revision="fde_w"/> 
   <project path="fdeime" name="fdeime" groups="fusion" /> 
   <project path="mutter" name="mutter" groups="compositor" revision="3.36.1_w" /> 
