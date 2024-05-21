@@ -19,5 +19,16 @@
   <!-- AOSP Projects -->
 
   <project path="fde_ctrl" name="fde_ctrl" groups="go" revision="main" />
+  <project path="fde_fs" name="fde_fs" groups="go" revision="main" />
+  <project path="fdeion" name="fdeion" groups="kmod" /> 
+  <project path="libglibutil" name="libglibutil" groups="waydroid" /> 
+  <project path="liblibgbinder" name="libgbinder" groups="waydroid" /> 
+  <project path="gbinder-python" name="gbinder-python" groups="waydroid" /> 
+  <project path="waydroid_waydroid" name="waydroid_waydroid" groups="waydroid" /> 
+  <project path="mesa" name="mesa" groups="3d" revision="20.1.0_fde_w_for_kylinv10"/> 
+  <project path="fde_tigervncserver" name="fde_tigervncserver" groups="fusion" revision="fde_w"/> 
+  <project path="fdeime" name="fdeime" groups="fusion" /> 
+  <project path="mutter" name="mutter" groups="compositor" revision="3.36.1_w" /> 
+
 
 </manifest>
