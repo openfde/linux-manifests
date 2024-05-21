@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote  name="fde"
+	  fetch="https://github.com/openfde/"
+	  revision="refs/heads/fde_w" />
+  <remote  name="plaza"
+	  fetch="https://www.xplaza.cn/OpenFDE/"
+	  revision="refs/heads/fde_w" />
+
+  <remote  name="private"
+           fetch="ssh://git@github.com" />
+
+  <default revision="refs/heads/master"
+           remote="fde"
+           sync-c="true"
+           sync-j="4" />
+
+  <!-- AOSP Projects -->
+
+  <project path="fde_ctrl" name="fde_ctrl" groups="go" revision="main" />
+
+</manifests>
