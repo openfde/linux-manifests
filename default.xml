@@ -20,4 +20,4 @@
 
   <project path="fde_ctrl" name="fde_ctrl" groups="go" revision="main" />
 
-</manifests>
+</manifest>
